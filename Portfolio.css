@@ -1,0 +1,366 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body
+{
+    color: #edeeed;
+    background: #081b29;
+}
+.header
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(2s * var(--i));
+}
+.navbar a:hover{
+    color: #0ef;
+
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height:100vh;
+    background-image: url("C:\\Users\\uday\\Pictures\\uday portfolio img.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+.home-content h3 span{
+    color: #0ef;
+}
+
+.home-content h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.home-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height:40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(2s * var(--i));
+    margin: 30px 15px 30px 0;
+
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #081b29;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,
+    0 0 100px cyan,0 0 200px cyan;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:2 rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+    margin: 15px 0 30px;
+}
+.about-text h2 span{
+    color: #0ef;
+    
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title {
+    font-size: 60px;
+    margin: 15px 0 30px;
+    text-align: center;
+
+}
+
+.sub-title span {
+    color: #0ef;
+}
+.container1 h1{
+    font-size: 35px;
+}
+
+
+
+
+.Technical-bars {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 10px; 
+}
+
+.Technical-bars i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #555; 
+}
+
+.info span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.program-line {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+   margin-left: 15px;
+}
+
+.program-line span {
+    display: block;
+    height: 85%;
+    border-radius: 5px;
+}
+
+.program-line.html span {
+    background: linear-gradient(to right, #ffc107, #ff9800); 
+}
+
+.program-line.css span {
+    background: linear-gradient(to right, #2196f3, #3f51b5);
+}
+
+.program-line.java span {
+    background: linear-gradient(to right, #8bc34a, #4caf50); 
+}
+
+.program-line.python span {
+    background: linear-gradient(to right, #e91e63, #f06292); 
+}
+
+
+/*contact section*/
+
+#contact {
+    background-color: #081b29;
+    padding: 50px 0;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container2 h2 {
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.container2 h2 span{
+    color: #0ef;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight{
+    0%{
+       transform: translateX(-100px);
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes slideLeft{
+    0%{
+       transform: translateX(100px);
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes slideTop{
+    0%{
+       transform: translateY(100px);
+       opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes slideBottom{
+    0%{
+       transform: translateY(-100px);
+       opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
